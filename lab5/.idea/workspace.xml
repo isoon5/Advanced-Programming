@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13d29e85-6c5c-4f73-b237-1c8ae995c217" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/InvalidCatalogException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="13d29e85-6c5c-4f73-b237-1c8ae995c217" name="Default Changelist" comment="created main class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CatalogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CatalogUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,20 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="lab5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -55,18 +68,50 @@
       <option name="presentableId" value="Default" />
       <updated>1584631162128</updated>
       <workItem from="1584631165358" duration="9650000" />
-      <workItem from="1584650045881" duration="3354000" />
+      <workItem from="1584650045881" duration="5161000" />
     </task>
+    <task id="LOCAL-00001" summary="created main class">
+      <created>1584653816858</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584653816858</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="created main class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created main class" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="1030" y="134" key="CommitChangelistDialog2" timestamp="1584653830329">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1030" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1584653830329" />
     <state x="1201" y="294" key="FileChooserDialogImpl" timestamp="1584631383258">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1201" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1584631383258" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1584655274166">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1584655274166" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1584655274166">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1584655274166" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1584655274166">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1584655274166" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1584655274166">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1584655274166" />
     <state x="922" y="182" key="SettingsEditor" timestamp="1584631414975">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
