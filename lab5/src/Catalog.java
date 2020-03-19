@@ -10,8 +10,12 @@ public class Catalog {
         documents.add(doc);
     }
 
-    public Document findbyId(String id){
+    public Catalog(String name, String path){
+        this.name = name;
+        this.path = path;
+    }
 
+    public Document findbyId(String id){
         return documents.stream()
                 .filter(d->d.getId().equals(id)).findFirst().orElse(null);
     }
