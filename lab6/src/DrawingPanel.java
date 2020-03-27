@@ -39,17 +39,25 @@ public class DrawingPanel extends JPanel {
 
     private void drawShape(int x, int y){
         Random rand = new Random();
-        int radius = rand.nextInt(50);
+        int radius = rand.nextInt(150);
         int sides = (int) frame.configPanel.sidesField.getValue();
 
         float r = rand.nextFloat();
         float g = rand.nextFloat();
         float b = rand.nextFloat();
 
+        String item = frame.configPanel.colorCombo.getSelectedItem().toString();
+
+        if(item == "Black"){
+            r = 0;g = 0;b = 0;
+        }
         Color color = new Color(r,g,b, .5f);
         graphics.setColor(color);
+        String shape  = frame.configPanel.shapeCombo.getSelectedItem().toString();
+        if(shape == "Polygons")
         graphics.fill(new RegularPolygon(x, y, radius, sides));
-        //graphics.fill(new NodeShape(x,y,radius));
+        else
+        graphics.fill(new NodeShape(x,y,radius));
     }
 
 
