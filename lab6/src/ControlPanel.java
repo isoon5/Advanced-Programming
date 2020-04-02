@@ -1,5 +1,9 @@
+import javafx.stage.FileChooser;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.plaf.FileChooserUI;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowEvent;
@@ -36,27 +40,32 @@ public class ControlPanel extends JPanel {
 
     private void save(ActionEvent e){
         try{
-            ImageIO.write(frame.canvas.image, "PNG", new File("d:/test.png"));
+            JFileChooser browse = new JFileChooser("D:\\Facultate");
+            browse.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+            browse.showSaveDialog(null);
+
+            ImageIO.write(frame.canvas.image, "PNG", new File(browse.getSelectedFile().getAbsoluteFile(), "saved_img.png"));
+
         }catch (IOException ex){
             System.err.println(ex);
         }
     }
 
     private void load(ActionEvent e) {
-        try {
-            String path = "d:/test.png";
-            File file = new File(path);
-            BufferedImage image = ImageIO.read(file);
-            JLabel label = new JLabel(new ImageIcon(image));
-            JFrame f = new JFrame();
-            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            f.getContentPane().add(label);
-            f.pack();
-            f.setLocation(200,200);
-            f.setVisible(true);
+        JFileChooser browse = new JFileChooser();
+        browse.setDialogTitle("Select the image you want to load");
+        FileNameExtensionFilter filterFiles = new FileNameExtensionFilter("Image files extension: .png .jpg .jpeg", "jpg", "png", "gif", "jpeg");
+        browse.addChoosableFileFilter(filterFiles);
 
-        } catch (IOException ex) {
-            System.err.println(ex);
+        if(browse.showOpenDialog(null) == JFileChooser.APPROVE_OPTION){
+            File file = browse.getSelectedFile();
+            try{
+                frame.canvas.image = ImageIO.read(file);
+                frame.canvas.graphics = frame.canvas.image.createGraphics();
+                frame.canvas.repaint();
+            } catch (IOException ex){
+                System.err.println(ex);
+            }
         }
     }
 

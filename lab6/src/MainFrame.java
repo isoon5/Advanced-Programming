@@ -7,6 +7,7 @@ public class MainFrame extends JFrame {
     ControlPanel controlPanel;
     DrawingPanel canvas;
 
+
     public MainFrame(){
         super("My Drawing Application");
         init();
@@ -20,6 +21,7 @@ public class MainFrame extends JFrame {
         add(canvas, BorderLayout.CENTER);
         add(configPanel, BorderLayout.NORTH);
         add(controlPanel, BorderLayout.SOUTH);
-        pack();
+
+
     }
 }

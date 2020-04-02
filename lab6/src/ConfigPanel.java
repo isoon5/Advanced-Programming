@@ -26,7 +26,7 @@ public class ConfigPanel extends JPanel {
         String[] colors = {"Black", "Random"};
         colorCombo = new JComboBox(colors);
 
-        String[] shapes = {"Polygons", "Ellipses"};
+        String[] shapes = {"Polygons", "Circle", "Egg-shaped"};
         shapeCombo = new JComboBox(shapes);
 
 

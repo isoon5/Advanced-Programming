@@ -1,3 +1,5 @@
+import javafx.scene.shape.Ellipse;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -53,11 +55,17 @@ public class DrawingPanel extends JPanel {
         }
         Color color = new Color(r,g,b, .5f);
         graphics.setColor(color);
+
         String shape  = frame.configPanel.shapeCombo.getSelectedItem().toString();
+
         if(shape == "Polygons")
         graphics.fill(new RegularPolygon(x, y, radius, sides));
-        else
+        if(shape == "Circle")
         graphics.fill(new NodeShape(x,y,radius));
+        if(shape == "Egg-shaped")
+        graphics.fill(new NodeShape2(x,y,radius));
+
+
     }
 
 
@@ -87,4 +95,15 @@ public class DrawingPanel extends JPanel {
             super(x0 - radius / 2, y0 - radius / 2, radius, radius);
         }
     }
-}
+
+    public class NodeShape2 extends Ellipse2D.Double{
+        public NodeShape2(double x0, double y0, double radius){
+            super(x0 - radius, y0 - radius / 2, radius, radius/2);
+            
+        }
+    }
+
+
+
+    }
+
