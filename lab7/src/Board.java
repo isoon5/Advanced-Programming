@@ -11,8 +11,8 @@ public class Board {
         }
     }
 
-    public synchronized int getTokens(int index){
-        return synchronizedTokens.get(index).getNumber();
+    public synchronized List<Token> getTokens(){
+        return synchronizedTokens;
     }
 
 
@@ -26,7 +26,7 @@ public class Board {
             }
         }
 
-        System.out.println("First player chose the token with the index: "+index+" with tha value: " + getTokens(index));
+        System.out.println("First player chose the token with the index: "+index+" with tha value: " + getTokens());
         synchronizedTokens.remove(index);
         playerSwitch = true;
         notifyAll();
@@ -41,7 +41,7 @@ public class Board {
             }
         }
 
-        System.out.println("Second player chose the token with the index: "+index+" with tha value: " + getTokens(index));
+        System.out.println("Second player chose the token with the index: "+index+" with tha value: " + getTokens());
         synchronizedTokens.remove(index);
         playerSwitch = true;
         notifyAll();

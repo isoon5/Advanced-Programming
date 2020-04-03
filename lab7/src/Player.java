@@ -53,7 +53,7 @@ public class Player implements Runnable{
         return llap;
     }
 
-    public boolean gameWonBy(){
+    public boolean gameWon(){
         if(tokens.size() < conditionToWin){
             return false;
         }
@@ -72,7 +72,19 @@ public class Player implements Runnable{
     @Override
     public void run() {
 
-        Random random = new
+        Random random = new Random();
+
+        do{
+            int rand = random.nextInt(board.getTokens().size());
+            if (name.equals("Player1")) {
+                tokens.add(board.getTokens().get(rand));
+                board.firstPlayerMoves(rand);
+            }
+            else if (name.equals("Player2")) {
+                tokens.add(board.getTokens().get(rand));
+                board.secondPlayerMoves(rand);
+            }
+        }while(gameWon() == true);
 
     }
 }
