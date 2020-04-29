@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9026cb2-6ce6-4eee-b4b1-1c4013ee0e76" name="Default Changelist" comment="" />
+    <list default="true" id="c9026cb2-6ce6-4eee-b4b1-1c4013ee0e76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab8/src/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab7/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +19,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Y4bAdn6eGM40sA47CO3Aq9nv70" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,7 +31,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -87,8 +104,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582204674582</updated>
+      <workItem from="1587131395111" duration="654000" />
+      <workItem from="1588092014455" duration="52000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="42" key="#Project_Structure" timestamp="1582204767617">
@@ -99,6 +121,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="274" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1582874780648" />
+    <state x="1288" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587131411426">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1288" y="428" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587131411426" />
     <state x="462" y="125" key="FileChooserDialogImpl" timestamp="1582465958645">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -135,14 +161,16 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1582831684377" />
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1582265163112">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="533" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1588092030414">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1582265163112" />
-    <state x="65" y="4" key="new project wizard" timestamp="1582465960927">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="533" y="291" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588092030414" />
+    <state x="91" y="6" key="new project wizard" timestamp="1588092065661">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="65" y="4" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1582465960927" />
+    <state x="91" y="6" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1588092065661" />
     <state x="339" y="172" width="672" height="677" key="run.anything.popup" timestamp="1582205247056">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
